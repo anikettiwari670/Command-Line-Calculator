@@ -8,11 +8,11 @@ menu = st.selectbox(
     "Choose an option:",
     (1, 2, 3, 4, 5),
     format_func=lambda x: {
-        1: "1. Addition",
-        2: "2. Subtraction",
-        3: "3. Multiplication",
-        4: "4. Division",
-        5: "5. Exit",
+        1: "Addition",
+        2: "Subtraction",
+        3: "Multiplication",
+        4: "Division",
+        5: "Exit",
     }[x]
 )
 
@@ -47,3 +47,4 @@ if st.button("Calculate"):
         else:
             result = num1 / num2
             st.success(f"The division of {num1} and {num2} is: {result}")
+
