@@ -27,24 +27,25 @@ num2 = st.number_input("Enter the second number:", value=0.0)
 if st.button("Calculate"):
     if menu == 1:
         result = num1 + num2
-        st.success(f"The addition of {num1} and {num2} is: {result}")
+        st.success(result)
 
     elif menu == 2:
         if num1 > num2:
             result = num1 - num2
-            st.success(f"The subtraction of {num1} and {num2} is: {result}")
+            st.success(result)
         else:
             result = num2 - num1
-            st.success(f"The subtraction of {num2} and {num1} is: {result}")
+            st.success(result)
 
     elif menu == 3:
         result = num1 * num2
-        st.success(f"The multiplication of {num1} and {num2} is: {result}")
+        st.success(result)
 
     elif menu == 4:
         if num2 == 0:
             st.error("Division by zero is not possible. Try another number.")
         else:
             result = num1 / num2
-            st.success(f"The division of {num1} and {num2} is: {result}")
+            st.success(result)
+
 
