@@ -21,8 +21,8 @@ if menu == 5:
     st.stop()
 
 # Number inputs appear only when a valid operation is chosen
-num1 = st.number_input("Enter the first number:", value=0.0)
-num2 = st.number_input("Enter the second number:", value=0.0)
+num1 = st.number_input("Enter the first number:", value=0)
+num2 = st.number_input("Enter the second number:", value=0)
 
 if st.button("Calculate"):
     if menu == 1:
@@ -47,5 +47,6 @@ if st.button("Calculate"):
         else:
             result = num1 / num2
             st.success(result)
+
 
 
